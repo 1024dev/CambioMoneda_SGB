@@ -1,22 +1,37 @@
 <resources>
-    <string name="app_name">loginIS</string>
-    <!-- Strings related to login -->
+    <!-- Nombre aplicacion en movil -->
+    <string name="app_name">Cambio Moneda</string>
+
+    <!-- Strings login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in">Ingresar</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="title_activity_home_i_s">homeIS</string>
+    <string name="welcome">"Bienvenido !"</string>
+    <string name="invalid_username">Usuario invalido</string>
+    <string name="invalid_password">Password debe ser de mayor a 5 caracteres</string>
+    <string name="login_failed">"Login fallado"</string>
+    <!-- Strings login -->
+
+    <string name="title_activity_home_i_s">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title"> Cambio de Moneda</string>
-    <string name="nav_header_subtitle">admin@gasab.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
-    <string name="menu_home">Inicio</string>
-    <string name="menu_gallery">Formulario</string>
-    <string name="menu_slideshow">Slideshow</string>
+
+    <!-- Strings header menu -->
+    <string name="nav_header_title">Cambio de Moneda</string>
+    <string name="nav_header_subtitle">IMB</string>
+     <string name="nav_header_desc">Navigation header</string>
+    <!-- Strings header menu -->
+
+    <!-- Strings barra superior-->
+    <string name="action_settings">Configuración</string>
+    <!-- Strings barra superior-->
+
+    <!-- Strings Menu -->
+    <string name="menu_home">GEO Referencia</string>
+    <string name="menu_gallery">Manual</string>
+    <string name="menu_slideshow">Historial</string>
+    <!-- Strings Menu -->
+
+
 </resources>
