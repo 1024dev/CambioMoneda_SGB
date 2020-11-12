@@ -1,4 +1,4 @@
-package com.is.loginis.ui.gallery;
+package com.is.loginis.ui.MANUAL;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

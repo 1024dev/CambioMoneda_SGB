@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.is.loginis.ui.home.HomeFragment"
+        android:name="com.is.loginis.ui.GEO.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.is.loginis.ui.gallery.GalleryFragment"
+        android:name="com.is.loginis.ui.MANUAL.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.is.loginis.ui.slideshow.SlideshowFragment"
+        android:name="com.is.loginis.ui.HISTORIAL.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>

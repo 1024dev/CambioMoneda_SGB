@@ -1,4 +1,4 @@
-package com.is.loginis.ui.slideshow;
+package com.is.loginis.ui.HISTORIAL;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

@@ -1,4 +1,4 @@
-package com.is.loginis.ui.home;
+package com.is.loginis.ui.GEO;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

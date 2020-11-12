@@ -1,4 +1,4 @@
-package com.is.loginis.ui.slideshow;
+package com.is.loginis.ui.HISTORIAL;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
