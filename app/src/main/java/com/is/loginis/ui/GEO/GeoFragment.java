@@ -18,18 +18,12 @@ public class GeoFragment extends Fragment {
 
     private GeoViewModel geoViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        geoViewModel =
-                ViewModelProviders.of(this).get(GeoViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_geo, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
-        geoViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+    public View onCreateView(@NonNull LayoutInflater inflater,ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_geo,container,false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 }
