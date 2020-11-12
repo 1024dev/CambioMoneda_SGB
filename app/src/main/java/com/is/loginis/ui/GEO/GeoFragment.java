@@ -1,4 +1,4 @@
-package com.is.loginis.ui.HISTORIAL;
+package com.is.loginis.ui.GEO;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.is.loginis.R;
 
-public class SlideshowFragment extends Fragment {
+public class GeoFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private GeoViewModel geoViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
-        final TextView textView = root.findViewById(R.id.text_slideshow);
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        geoViewModel =
+                ViewModelProviders.of(this).get(GeoViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_geo, container, false);
+        final TextView textView = root.findViewById(R.id.text_home);
+        geoViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
