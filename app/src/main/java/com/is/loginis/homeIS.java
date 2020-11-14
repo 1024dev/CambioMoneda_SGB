@@ -6,6 +6,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.google.android.material.navigation.NavigationView;
+import com.is.loginis.ui.HISTORIAL.ListAdapter;
+import com.is.loginis.ui.HISTORIAL.ListElement;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -14,10 +16,16 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class homeIS extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +45,6 @@ public class homeIS extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
-
     }
 
     @Override
@@ -53,4 +60,8 @@ public class homeIS extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+
+
+
 }
