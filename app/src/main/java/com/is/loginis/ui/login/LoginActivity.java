@@ -20,17 +20,22 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.is.loginis.R;
 import com.is.loginis.homeIS;
-import com.is.loginis.ui.login.LoginViewModel;
-import com.is.loginis.ui.login.LoginViewModelFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
+
+    private TextView nombreRegistrar;
+    private TextView passwordRegistrar;
+    private TextView emailRegistrar;
+    private Spinner paisRegistrar;
+    private Button registrarLogin;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -120,7 +125,22 @@ public class LoginActivity extends AppCompatActivity {
              irSiguiente(v);
             }
         });
-    }
+
+        nombreRegistrar = (TextView) findViewById(R.id.textNombreRegistrar);
+        passwordRegistrar = (TextView) findViewById(R.id.editTextTextPasswordRegistrar);
+        emailRegistrar = (TextView) findViewById(R.id.editTextTextEmailAddressRegistrar);
+        paisRegistrar = (Spinner) findViewById(R.id.spnPaisRegistrar);
+        registrarLogin = (Button) findViewById(R.id.btnRegistrarLogin);
+        registrarLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+            }
+        });
+        }
+
+
+
 
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
@@ -137,5 +157,14 @@ public class LoginActivity extends AppCompatActivity {
         Intent inte = new Intent(this, homeIS.class);
         startActivity(inte);
     }
+
+    public void openDialog(){
+        DialogRegistrar ejdialog = new DialogRegistrar();
+        ejdialog.show(getSupportFragmentManager(),"Hola Garay");
+
+    }
+
+
+
 
 }
